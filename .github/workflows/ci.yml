@@ -14,5 +14,5 @@ jobs:
       - name: Deploy
         if: ${{ github.ref == 'refs/heads/main' }}
         run: |
-          git remote set-url origin https://x-access-token:${{ github.virtualBackground }}@github.com/VedantKhairnar/virtual-background-msa
+          git remote set-url origin https://x-access-token:${{ github.virtualBackground }}@github.com/VedantKhairnar/virtual-background-msa.git
           yarn deploy -u "GitHub Actions <github-actions@users.noreply.github.com>"
